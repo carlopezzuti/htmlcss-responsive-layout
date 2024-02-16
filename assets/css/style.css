@@ -34,3 +34,111 @@ img {
 ul {
     list-style-type: none;
 }
+
+:root {
+    --primaryColor: #0284FD;
+    --secondaryColor: #B5DEFF;
+    --tertiaryColor: #9792E4;
+    --accentColor: #FDC15F;
+    --darkColor: #2e2e2e;
+}
+
+section {
+    margin-block: 40px;
+}
+
+/*-----------------
+    TYPOGRAPHY
+-----------------*/
+
+a {
+    text-decoration: none;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 2.5rem;
+}
+
+h3 {
+    font-size: 2rem;
+}
+
+h4 {
+    font-size: 1.5rem;
+}
+
+h5 {
+    font-size: 1.3rem;
+}
+
+h6 {
+    font-size: 1.2rem;
+}
+
+/*-----------------
+    BUTTON
+-----------------*/
+
+.btn {
+    border: none;
+    border-radius: 25px;
+}
+
+.btn-white {
+    padding: 8px 13px;
+    color: black;
+    background-color: white;
+}
+
+.btn-blue {
+    padding: 8px 40px;
+    color: white;
+    background-color: var(--primaryColor);
+    text-transform: capitalize;
+}
+
+.btn-purple {
+    padding: 8px 40px;
+    color: white;
+    background-color: var(--tertiaryColor);
+}
+
+.btn:hover {
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+/*-----------------
+    HEADER
+-----------------*/
+
+header {
+    background-color: var(--primaryColor);
+    justify-content: space-between;
+    align-items: center;
+    padding-block: 10px;
+}
+
+.hamburger {
+    display: none;
+}
+
+.menu {
+    gap: 2rem;
+    text-transform: capitalize;
+    color: white;
+    align-items: center;
+}
+
+.menu a {
+    color: white;
+}
+
+.menu button {
+    text-transform: capitalize;
+}
+

@@ -143,6 +143,348 @@ header {
 }
 
 /*-----------------
+    MAIN
+-----------------*/
+
+/*-----------------
+    INTRO
+-----------------*/
+
+.blue-icon {
+    color: var(--primaryColor);
+    font-size: 3rem;
+}
+
+.light-blue-card {
+    background-color: var(--secondaryColor);
+    border-radius: 20px;
+    width: calc(((100% / 3) - 20px) + (20px / 3));
+    padding: 20px;
+    text-align: center;
+}
+
+.light-blue-card h5 {
+    color: var(--primaryColor);
+    margin-block: 20px;
+}
+
+.light-blue-card p {
+    margin-top: 20px;
+    color: var(--darkColor);
+}
+
+.light-blue-card button {
+    margin-bottom: 50px;
+    margin-top: 30px;
+}
+
+.light-blue-card:first-child {
+    width: calc((((100% / 3) * 2) - 20px) + ((20px / 3) *2));
+    padding-bottom: 0;
+    text-align: left;
+}
+
+.light-blue-card:first-child div {
+    flex-basis: 60%;
+}
+
+.light-blue-card:first-child figure {
+    width: 40%;
+    justify-content: center;
+}
+
+#intro {
+    flex-wrap: wrap;
+    gap: 20px;
+    row-gap: 20px;
+}
+
+/*-----------------
+    PLANNING
+-----------------*/
+
+#planning {
+    padding: 80px 15% 60px 15%;
+    background-color: var(--tertiaryColor);
+    gap: 70px;
+}
+
+#planning h4 {
+    text-transform: capitalize;
+}
+
+#left-card {
+    color: white;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#left-card h4 {
+    padding-block: 30px;
+}
+
+#left-card>figure {
+    padding-inline: 20px;
+    margin-bottom: 50px;
+}
+
+#right-card {
+    background-color: white;
+    text-align: center;
+    border-radius: 50px;
+    margin-top: 30%;
+    padding: 20px;
+    flex-direction: column;
+    align-items: center;
+}
+
+#right-card figure {
+    width: 70%;
+    margin-bottom: 20px;
+}
+
+#right-card p {
+    font-style: italic;
+    margin-block: 30px;
+}
+
+.arrow-down {
+    background-color: var(--tertiaryColor);
+    border-radius: 50%;
+    aspect-ratio: 1;
+    padding: 19px 22px 15px 22px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.arrow-down svg {
+    padding-bottom: 0;
+}
+
+/*-----------------
+    TESTIMONIALS
+-----------------*/
+
+#testimonials .testimonial-title {
+    flex-direction: column;
+    text-align: center;
+    gap: 40px;
+    margin-bottom: 30px;
+}
+
+.testimonial-title h6 {
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+.testimonial-title h2 {
+    color: var(--tertiaryColor);
+}
+
+.testimonial-card {
+    background-color: var(--tertiaryColor);
+    padding: 30px 20px;
+    color: white;
+    border-radius: 30px;
+    align-items: center;
+}
+
+.testimonial-card figure {
+    background-position: center;
+    background-size: cover;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    flex-basis: 20%;
+    margin-right: 30px;
+}
+
+.testimonial-pic1 {
+    background-image: url(/assets/img/testimonial1.jpg);
+}
+
+.testimonial-pic2 {
+    background-image: url(/assets/img/testimonial2.jpg);
+}
+
+.testimonial-pic3 {
+    background-image: url(/assets/img/testimonial3.jpg);
+}
+
+.testimonial-card cite::before {
+    content: '\f10d';
+    color: white;
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    font-size: 15px;
+    padding-right: 10px;
+}
+
+.testimonial-card cite::after {
+    content: '\f10e';
+    color: white;
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    font-size: 15px;
+    padding-left: 10px;
+}
+
+.testimonial-card h6 {
+    text-transform: uppercase;
+    padding-top: 20px;
+    font-weight: 500;
+}
+
+#testimonials div:nth-child(3) {
+    margin-block: 20px;
+}
+
+/*-----------------
+    BENEFITS
+-----------------*/
+
+#benefits {
+    background-color: var(--tertiaryColor);
+    padding-block: 50px;
+}
+
+#benefits h2 {
+    color: white;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+#benefits p {
+    font-weight: 200;
+}
+
+#benefits-cards {
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.benefits-card {
+    background-color: white;
+    border-radius: 30px;
+    width: calc((100% / 3) - 20px + (20px / 3));
+    padding: 30px;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.benefits-card h1,
+.benefits-card h4 {
+    color: var(--tertiaryColor);
+    text-transform: capitalize;
+}
+
+/*-----------------
+    ABOUT US
+-----------------*/
+
+#about-us {
+    padding-inline: 15%;
+    gap: 100px;
+    margin-block: 50px;
+}
+
+#about-us h2,
+#about-us h4,
+#about-us i {
+    color: var(--tertiaryColor);
+}
+
+#about-us h2 {
+    margin-bottom: 30px;
+}
+
+#about-us div:first-child {
+    width: 100%;
+}
+
+.about-us-right {
+    width: 30%;
+
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+}
+
+.about-us-right figure {
+    background-image: url(/assets/img/about.jpg);
+    background-position: center;
+    background-size: cover;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    position: relative;
+}
+
+.about-us-right figure i {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 4rem;
+}
+
+.about-us-right .btn-purple {
+    padding-inline: 20px;
+}
+
+/*-----------------
+    GET STARTED
+-----------------*/
+
+#get-started {
+    padding-inline: 35%;
+    padding-block: 50px;
+    text-align: center;
+    color: white;
+    background-color: var(--tertiaryColor);
+    margin-bottom: 0;
+}
+
+#get-started span {
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: 100;
+}
+
+#get-started h3 {
+    text-transform: capitalize;
+    margin-top: 20px;
+}
+
+#get-started h1 {
+    text-transform: capitalize;
+    color: var(--accentColor);
+    margin-block: 40px;
+}
+
+#get-started button {
+    margin-block: 30px;
+    padding: 20px 35px;
+    color: var(--tertiaryColor);
+    text-transform: capitalize;
+}
+
+.copyright {
+    justify-content: center;
+}
+
+#get-started ul {
+    list-style-type: disc;
+    margin-left: 1.2em;
+}
+
+#get-started ul li:nth-child(2) {
+    text-decoration: underline;
+    margin-left: 1.2em;
+}
+
+#get-started ul li:nth-child(2) a {
+    color: white;
+}
+
+/*-----------------
     FOOTER
 -----------------*/
 

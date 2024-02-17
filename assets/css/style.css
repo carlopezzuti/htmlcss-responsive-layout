@@ -142,3 +142,24 @@ header {
     text-transform: capitalize;
 }
 
+/*-----------------
+    FOOTER
+-----------------*/
+
+footer {
+    background-color: var(--darkColor);
+    text-align: center;
+    padding: 30px 40%;
+    line-height: 140%;
+    color: white;
+    font-size: 14px;
+}
+
+footer p:first-child {
+    margin-bottom: 50px;
+}
+
+footer a {
+    color: var(--tertiaryColor);
+    text-decoration: underline;
+}

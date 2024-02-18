@@ -1,0 +1,238 @@
+/*-----------------
+    RESPONSIVE
+-----------------*/
+
+/*-----------------
+    TABLET
+-----------------*/
+
+@media screen and (max-width: 768px) {
+
+    .body-padding {
+        padding-inline: 3%;
+    }
+
+    /*-----------------
+        HEADER
+    -----------------*/
+
+    .hamburger {
+        display: block;
+        width: 20px;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    /*-----------------
+        INTRO
+    -----------------*/
+
+    .light-blue-card:first-child {
+        flex-direction: column;
+    }
+
+    .light-blue-card:first-child figure {
+        flex-basis: 100%;
+        justify-content: flex-start;
+        width: 50%;
+        height: 100%;
+    }
+
+    /*-----------------
+        PLANNING
+    -----------------*/
+
+    #planning {
+        flex-direction: column;
+        padding-inline: 3%;
+    }
+
+    #left-card h4 {
+        font-size: 4rem;
+    }
+
+    #right-card {
+        margin-top: 20px;
+    }
+
+    /*-----------------
+        TESTIMONIALS
+    -----------------*/
+
+    .testimonial-card figure {
+        flex-basis: 30%;
+    }
+
+    .testimonial-card div {
+        flex-basis: 70%;
+    }
+
+    /*-----------------
+        BENEFITS
+    -----------------*/
+
+    .benefits-card {
+        width: calc((100% / 2) - 10px);
+    }
+
+    /*-----------------
+        ABOUT US
+    -----------------*/
+
+    #about-us {
+        padding-inline: 3%;
+        gap: 80px;
+    }
+
+    .about-us-right {
+        width: 50%;
+    }
+
+    /*-----------------
+        GET STARTED
+    -----------------*/
+
+    #get-started {
+        padding-inline: 20%;
+    }
+
+    /*-----------------
+        FOOTER
+    -----------------*/
+
+    footer {
+        padding-inline: 20%;
+    }
+
+}
+
+/*-----------------
+    MOBILE VERSION
+-----------------*/
+
+@media screen and (max-width: 576px) {
+
+    .body-padding {
+        padding-inline: 5%;
+    }
+
+    header {
+        padding-block: 15px;
+    }
+
+    /*-----------------
+        INTRO
+    -----------------*/
+
+    .blue-icon {
+        font-size: 6rem;
+    }
+
+    .light-blue-card,
+    .light-blue-card:first-child {
+        width: 100%;
+    }
+
+    .light-blue-card {
+        padding: 40px;
+    }
+
+    .light-blue-card:first-child figure {
+        width: 100%;
+    }
+
+    .btn-blue {
+        font-size: 1.5rem;
+        padding: 10px 80px;
+        border-radius: 50px;
+        letter-spacing: .2rem;
+    }
+
+    .light-blue-card h3,
+    .light-blue-card:first-child h3 {
+        font-size: 2rem;
+    }
+
+    .light-blue-card p {
+        font-size: 1.2rem;
+    }
+
+    /*-----------------
+        PLANNING
+    -----------------*/
+
+    #planning {
+        padding-inline: 8%;
+    }
+
+    #left-card h4 {
+        font-size: 2rem;
+    }
+
+    /*-----------------
+        TESTIMONIALS
+    -----------------*/
+
+    .testimonial-card {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .testimonial-card figure {
+        width: 70%;
+        margin: 0;
+    }
+
+    /*-----------------
+        BENEFITS
+    -----------------*/
+
+    #benefits h2 {
+        font-size: 2rem;
+    }
+
+    .benefits-card {
+        width: 100%;
+    }
+
+    /*-----------------
+        ABOUT US
+    -----------------*/
+
+    #about-us {
+        padding-inline: 5%;
+        flex-direction: column;
+        gap: 80px;
+    }
+
+    .about-us-right {
+        width: 100%;
+    }
+
+    .about-us-right figure {
+        width: 50%;
+    }
+
+    /*-----------------
+        GET STARTED
+    -----------------*/
+
+    #get-started {
+        padding-inline: 5%;
+    }
+
+    #get-started button {
+        width: 80%;
+    }
+
+    /*-----------------
+        FOOTER
+    -----------------*/
+
+    footer {
+        padding-inline: 10%;
+    }
+
+}
